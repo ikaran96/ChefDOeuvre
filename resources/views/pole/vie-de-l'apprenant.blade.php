@@ -1,6 +1,6 @@
 @extends('pole.layout')
 @section('content')
-    <div class="general">
+    <div class="general" style="margin-bottom:50px">
         <div class="container">
             <div class="row">
 

@@ -3,19 +3,9 @@
 
 <body id="simplon">
 
-    <!-- PRE LOADER -->
-    <section class="preloader">
-        <div class="spinner">
-
-            <span class="spinner-rotate"></span>
-
-        </div>
-    </section>
 
 
     <!-- HEADER MOCHE/////////////////////////////////////////// -->
-    <?php $currentPage = "Formations diplômantes et certifiantes"; ?>
-    <?php include 'include/navbar.php' ?>
 
 
     <section class="simp" id="formation">
@@ -23,7 +13,7 @@
 
             <div class="row forma-section-title flex">
 
-                <div><a href="#"><img class="img-fluid" src="images/simplon1.jpg"></a>
+                <div><a href="#"><img class="img-fluid" src="{{asset('img/simplon1.jpg')}}"></a>
                 </div>
                 <div>
                     <div>
@@ -77,12 +67,12 @@
                     <span>1</span>
                     Inscription en ligne dès l'ouverture des questionnaires sur simplon.co
                 </div>
-                <img src="images/groupe8.svg" alt="">
+                <img src="{{asset('img/groupe8.svg')}}" alt="">
                 <div id="recruc2" class="col-3 recru-card mx-auto">
                     <span>2</span>
                     1ère sélection des candidat-e-s sur leur degré de motivation
                 </div>
-                <img src="images/groupe8.svg" alt="">
+                <img src="{{asset('img/groupe8.svg')}}" alt="">
                 <div id="recruc3" class="col-3 recru-card mx-auto">
                     <span>3</span>
                     2ème sélection des candidat-e-s par 1 jury de professionnels du numérique
@@ -101,7 +91,7 @@
         <div class="container-fluid">
             <div class="row peda-flex">
 
-                <img class="imagepeda" src="images/peda-simplon.png" alt="">
+                <img class="imagepeda" src="{{asset('img/peda-simplon.png')}}" alt="">
 
                 <div class="col-9 peda-txt">
                     <div class="forma-section-title">
@@ -233,7 +223,7 @@
                             <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2020/02/Flyer-Num%C3%A9rique-OK.pdf"
                                 target="_blank" class="">Télécharger le livret<br>des formations numériques</a>
                         </div>
-                        <img src="images/file-dl.svg" alt=""><span>PDF 2,04Mo</span>
+                        <img src="{{asset('img/file-dl.svg')}}" alt=""><span>PDF 2,04Mo</span>
                     </div>
                     <div></div>
                 </div>

@@ -11,20 +11,18 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}"> -->
-    <!-- <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}"> -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
 
 
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+
 
 </head>
 
@@ -53,11 +51,11 @@
     <div class="user-interface">
         @guest
         <div class="user-interface-element">
-            <a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Se connecter</a>
+            <a class="a-ui" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Se connecter</a>
         </div>
         @if (Route::has('register'))
         <div class="user-interface-element">
-            <a href="{{ route('register') }}"><i class="fas fa-user"></i> S'inscrire</a>
+            <a class="a-ui" href="{{ route('register') }}"><i class="fas fa-user"></i> S'inscrire</a>
         </div>
         @endif
         @else
@@ -65,7 +63,13 @@
             {{ Auth::user()->name }}
         </div>
         <div class="user-interface-element">
-            <a href="{{ route('logout') }}"
+            <a class="a-ui" href="/admin">Dashboard</a>
+        </div>
+        <div class="user-interface-element">
+            <a class="a-ui" href="/admin">Mon compte</a>
+        </div>
+        <div class="user-interface-element">
+            <a class="a-ui" href="{{ route('logout') }}"
                 onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i
                     class="fas fa-sign-out-alt"></i> Se déconnecter</a>
         </div>
@@ -80,9 +84,8 @@
             <div id="containerLvl1" class="container">
                 <div class="mobile">
                     <div class="img-mobile">
-                        <img class="menumobile" alt="Menu"
-                            src="https://www.poleformation-cci08.fr/wp-content/themes/Template-cci/images/picto_menu-smartphone.png">
-                    </div <p>MENU</p>
+                    <i class="fas fa-bars" style="color:white; font-size:20px"></i>
+                    </div> <p>MENU</p>
                 </div>
                 <ul onclick="myFunction(event)" id="menu" class="niv1 current">
                     <li id="menu-item-101"
@@ -126,6 +129,9 @@
             </div>
         </div>
     </div>
+     <!-- PRE LOADER -->
+
+   
     <div>
         @yield('content')
     </div>
@@ -188,16 +194,16 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{asset('/js/jquery.stellar.min.js')}}"></script>
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/smoothscroll.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script> --> 
-    <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+    <script src="{{asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{asset('/js/jquery.stellar.min.js')}}"></script>
+    <script src="{{asset('js/wow.min.js') }}"></script>
+    <script src="{{asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{asset('js/smoothscroll.js') }}"></script>
+    <script src="{{asset('js/custom.js') }}"></script> 
+
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>

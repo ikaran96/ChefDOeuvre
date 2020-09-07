@@ -1,0 +1,161 @@
+
+
+.admin-column{
+    width:100%;
+    height:auto;
+    top:0;
+    align-items: center;
+    text-align:center;   
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+}
+.admin-element-nav{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:300px;
+    justify-content: center;
+}
+.admin-element-nav:hover{
+    cursor:pointer;
+}
+.admin-element-nav a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#frst-element{
+    background-color: #E5E5E5;
+}
+#scnd-element{
+    background-color: #CECBCA;
+}
+#thrd-element{
+    background-color: #B9B4B2;
+}
+#frth-element{
+    background-color: #9B9696;
+}
+#frst-element:hover,
+#scnd-element:hover,
+#thrd-element:hover,
+#frth-element:hover{
+    background-color:rgba(0, 0, 0, 0.2);   
+}
+#formations-section{
+    background-color:#e30043;
+}
+.card-container{
+    height:auto;
+    padding:20px;
+}
+.card-wrapper{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    width:90%;
+    height:120px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: whitesmoke;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between ;
+}
+.name-content{
+    display: flex;
+    align-items: center;
+    margin-left:10px;
+
+}
+.buttons-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right:10px;
+}
+.button-element{
+    margin-bottom:8px;
+}
+.button-element a{
+    font-size:10px;
+}
+#modif-button{
+    background-color: #89BB97;
+    padding:0px 10px;
+    border-radius:10px;
+}
+#voir-button{
+    background-color: #66A4D2;
+    padding: 0px 10px;
+    border-radius:10px;
+}
+#supp-button{
+    background-color: #D26666;
+    padding:0px 10px;
+    border-radius:10px;
+}
+.name-page{
+    text-align: center;
+}
+.add-formation{
+    font-weight: 200;
+    text-align: right;
+    font-size:13px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+.add-formation a {
+    color:#e30043;
+}
+.add-formation a:hover{
+    color:black;
+}
+.fa-arrow-left{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+
+}
+.add-title{
+    text-align:center;
+}
+.form-wrapper{
+    padding:10px;
+}
+.form-wrapper form{
+    width:90%;
+}
+.big-element-link{
+    width:100%;
+    background-color:#e30043;
+    text-align:center;
+    box-shadow:5px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.big-element-link:hover{
+    background-color:white;
+}
+.big-element-link a{
+    color:black;
+    font-weight:500;
+    font-size:24px;
+}
+@media only screen and (min-width:768px){
+    #formations-section{
+        display: flex;
+        background-color:#e30043;
+        width:100%;
+        flex-wrap: wrap;
+
+    }
+    .card-container{
+        width:50%;
+     
+    }
+}
+@media only screen and (min-width:1024px){
+    .form-wrapper form{
+        width:50%;
+    } 
+}

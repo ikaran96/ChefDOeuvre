@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Formation;
 use Illuminate\Http\Request;
 
 class FormationController extends Controller
@@ -13,7 +14,8 @@ class FormationController extends Controller
      */
     public function index()
     {
-        //
+        $ecoles = Formation::all();
+        return view('admin.formations.ecoles')->with(['ecoles'=>$ecoles]);
     }
 
     /**
@@ -23,7 +25,7 @@ class FormationController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.formations.ajouter');
     }
 
     /**
@@ -34,7 +36,8 @@ class FormationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Formation::create($request->all());
+        return redirect()->route('ecoles.index')->with('message','Nouvelle école créée');
     }
 
     /**
@@ -54,9 +57,9 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Formation $ecole)
     {
-        //
+        return view('admin.formations.edit', compact('ecole'));
     }
 
     /**
@@ -66,9 +69,10 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Formation $ecole)
     {
-        //
+        $ecole->update(['name' => $request->name]);
+        return redirect()->back()->with('message','Modification ajoutée');
     }
 
     /**
@@ -77,8 +81,10 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Formation $ecole)
     {
-        //
+        $ecole->delete();
+        return redirect()->back()->with('message', 'Ecole supprimée');
+
     }
 }

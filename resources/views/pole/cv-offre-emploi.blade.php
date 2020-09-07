@@ -14,7 +14,7 @@
                 <div class="col-md-6 col-sm-6 card-body123">
                     <center>
                         <div class="toto mx-1 p-2">
-                            <img src="images/cv.png" class="card-img-top" alt="...">
+                            <img src="{{ asset('img/cv.png')}}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 style="text-decoration:" class="card-title">CVTHÈQUE</h5>
                                 <p style="color:#000000" class="card-text">En construction.
@@ -28,7 +28,7 @@
                 <div class="col-md-6 col-sm-6 card-body123">
                     <center>
                         <div class="tata mx-1 p-2">
-                            <img src="images/offre.jpg" class="card-img-top" alt="...">
+                            <img src="{{ asset('img/offre.jpg')}}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">OFFRES D’EMPLOI</h5>
                                 <p style="color:#000000" class="card-text">Vendeur(se) Conseiller(e) Commercial(e)

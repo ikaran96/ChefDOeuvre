@@ -1,56 +1,43 @@
 @extends('pole.layout')
 @section('content')
+
 <!-- HOME -->
 <section id="home" class="slider" data-stellar-background-ratio="0.5">
     <div class="row">
         <div class="autoplay">
-            <div class="item item-first">
+            <div class="item item-first" style="background-image: url('{{ asset('img/slider1.jpg')}}')">
                 <div class="caption">
-                    <div class="container">
-                        <div class="col-md-8 col-sm-12">
+                    <div class="container-slick">
+                        <div>
                             <h3>Bienvenue</h3>
-                            <h1>Découvrez ici le Pôle Formation de la CCI des Ardennes </h1>
+                            <h1>Pôle Formation de la CCI des Ardennes </h1>
                         </div>
                     </div>
                 </div>
+                <div class="color-overlay"></div>
             </div>
-            <div class="item item-second">
+            <div class="item item-second" style="background-image: url('{{ asset('img/slider2.jpg')}}')">
                 <div class="caption">
-                    <div class="container">
-                        <div class="col-md-8 col-sm-12">
+                    <div class="container-slick">
+                        <div>
                             <h3>Bienvenue</h3>
-                            <h1>Découvrez ici le Pôle Formation de la CCI des Ardennes </h1>
+                            <h1>Pôle Formation de la CCI des Ardennes </h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="item item-third">
+            <div class="item item-third" style="background-image: url('{{ asset('img/slider3.jpg')}}')">
                 <div class="caption">
-                    <div class="container">
-                        <div class="col-md-8 col-sm-12">
+                    <div class="container-slick">
+                        <div>
                             <h3>Bienvenue</h3>
-                            <h1>Découvrez ici le Pôle Formation de la CCI des Ardennes </h1>
+                            <h1>Pôle Formation de la CCI des Ardennes </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="owl-carousel owl-theme">
-            <div class="item item-first">
-                <div class="caption">
-                    <div class="container">
-                        <div class="col-md-8 col-sm-12">
-                            <h3>Bienvenue</h3>
-                            <h1>Découvrez ici le Pôle Formation de la CCI des Ardennes </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-          -->
-    </div>
-
     </div>
 </section>
 
@@ -94,7 +81,7 @@
 
             <div class="col-md-6 col-sm-12">
                 <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
-                    <img src="images/about-interieur.jpg" class="img-responsive" alt="">
+                    <img src="{{ asset('img/about-interieur.jpg')}}" class="img-responsive" alt="">
                 </div>
             </div>
 
@@ -118,7 +105,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2019/10/Anglais-CC-D%C3%A9butant.pdf"
                         target="_blank">
-                        <img src="images/anglais.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/anglais.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -127,7 +114,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2019/10/Japonais-CC-D%C3%A9butant.pdf"
                         target="_blank">
-                        <img src="images/japonais.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/japonais.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -136,7 +123,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2019/10/Italien-CC-D%C3%A9butant.pdf"
                         target="_blank">
-                        <img src="images/italien.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/italien.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -155,7 +142,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.7s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2020/01/Visuel-M%C3%A9tiers-du-num%C3%A9rique.jpg"
                         target="_blank">
-                        <img src="images/numerique.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/numerique.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -164,7 +151,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.8s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2020/06/Visuel-ISCEE-2pl.jpg"
                         target="_blank">
-                        <img src="images/iscee.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/iscee.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -173,7 +160,7 @@
                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.9s">
                     <a href="https://www.poleformation-cci08.fr/wp-content/uploads/2020/02/Visuel-ifag.jpg"
                         target="_blank">
-                        <img src="images/ifag.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('img/ifag.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>

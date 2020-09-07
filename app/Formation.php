@@ -7,8 +7,6 @@ use Illuminate\Notifications\Notifiable;
 
 class Formation extends Model
 {
-    use Notifiable;
-  public function eleves(){
-      return $this->hasMany('App\Eleve');
-  }
+  protected $fillable = ['name', 'logo', 'short_desc'];
+
 }

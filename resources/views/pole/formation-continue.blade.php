@@ -16,7 +16,7 @@
                     <div class="col-md-4 col-sm-4 card-body123">
                         <center>
                             <div class="zoulou mx-1 p-2">
-                                <img src="images/cci1.jpg" class="card-img-top" alt="...">
+                                <img src="{{ asset('img/cci1.jpg')}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 style="text-decoration:" class="card-title">CENTRE D'ETUDE DES LANGUES</h5>
                                     <p style="color:#000000" class="card-text">Une formule pédagogique adaptée et
@@ -31,7 +31,7 @@
                     <div class="col-md-4 col-sm-4 card-body123">
                         <center>
                             <div class="zoulou mx-1 p-2">
-                                <img src="images/cci1.jpg" class="card-img-top" alt="...">
+                                <img src="{{ asset('img/cci1.jpg')}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">PROGRAMMES</h5>
                                     <p style="color:#000000" class="card-text">Formations courtes dans de multiples
@@ -45,7 +45,7 @@
                     <div class="col-md-4 col-sm-4 card-body123">
                         <center>
                             <div class="zoulou mx-1 p-2">
-                                <img src="images/cci1.jpg" class="card-img-top" alt="...">
+                                <img src="{{ asset('img/cci1.jpg')}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">POINT D'ACCEUIL AGEFICE</h5>
                                     <p style="color:#000000" class="card-text">Interlocuteur exclusif et privilégié

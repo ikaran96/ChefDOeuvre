@@ -134,8 +134,8 @@ section {
   position: absolute;
   z-index:900;
   top:10px;
-  left:10px;
-  font-family: 'Roboto', sans-serif; ;
+  right:10px;
+  font-family: 'Roboto', sans-serif;
 }
 .wrapper-user-interface{
   margin-top:30px;
@@ -160,6 +160,24 @@ section {
 .title-user-interface{
   margin-bottom:30px;
   margin-top:30px;
+}
+.user-interface-element{
+  background-color:#5B5B5B;
+  padding-right:10px;
+  padding-left:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+  margin-bottom:5px;
+  border-radius:10px;
+  color:white;
+  text-align: center;
+  font-size: 11px;
+}
+.a-ui{
+  color:#C4C4C4;
+}
+.a-ui:hover{
+  color:white;
 }
 
 /*---------------------------------------
@@ -973,58 +991,35 @@ input[type="submit"]:hover {
     padding-left: 0;
   }
 }
+/* .row{
+  width:100%;
+} */
 
-.slider .owl-dots {
-  position: absolute;
-  top: 50%;
-  right: 2em;
-  justify-content: center;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  display: block;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 12px;
-  height: 12px;
-  margin: 7px 10px;
-  border: 2px solid #d9d9d9;
-  background: transparent;
-  display: block;
-  -webkit-backface-visibility: visible;
-  transition: opacity 200ms ease;
-  border-radius: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #ffffff;
-  border-color: transparent;
-}
 
 .slider .caption {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: left;
-  background-color: rgba(20, 20, 20, 0.2);
+  text-align: center;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.5);
   height: 100%;
+  width:100%;
   color: #fff;
   cursor: pointer;
   padding: 4em 0 0 2em;
 }
-
 .slider .item {
   background-position: inherit;
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: cover;
-  height:90vh;
+  height:calc(100vh - 118px - 74px);
+  opacity:4;
 }
 
-.slider .item-first {
-  background-image: url(../images/slider1.jpg);
+/* .slider .item-first {
+  background-image: url( ../images/slider1.jpg);
 }
 
 .slider .item-second {
@@ -1033,27 +1028,8 @@ input[type="submit"]:hover {
 
 .slider .item-third {
   background-image: url(../images/slider3.jpg);
-}
+} */
 
-.slider .item-second .section-btn {
-  background: #292929;
-}
-
-.slider .item-second .section-btn:hover {
-  background: #ffffff;
-}
-
-.slider .item-third .section-btn {
-  background: transparent;
-  border: 1px solid #ffffff;
-}
-
-.slider .item-third .section-btn:hover,
-.slider .item-third .section-btn:focus {
-  background: #ce3232;
-  border-color: transparent;
-  color: #ffffff;
-}
 
 /*---------------------------------------
       ABOUT              
@@ -1890,3 +1866,10 @@ footer address p {
   background: url("images/da shes.svg");
 }
 
+/* @media only screen and (min-width:602px){
+  .user-interface{
+    display: flex;
+    justify-content: space-around;
+    width:200px;
+  }
+} */

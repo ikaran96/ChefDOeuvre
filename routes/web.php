@@ -19,7 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/pole/contact', function () {
     return view('pole.contact');
@@ -39,5 +38,21 @@ Route::get('/pole/apprenant', function () {
 Route::get('/pole/cv-offre-emploi', function () {
     return view('pole.cv-offre-emploi');
 });
+Route::get('/pole/simplon', function () {
+    return view('pole.simplon');
+});
 
 Route::resource('/pole', 'PoleFormationController');
+Route::resource('/ecoles', 'FormationController');
+Route::resource('/diplomantes', 'FormationDiplomanteController');
+Route::resource('/continues', 'FormationContinueController');
+Route::resource('/eleves-diplomantes', 'EleveDiplomanteController');
+// Route::resource('/eleves-continues', 'EleveContinueController');
+// Route::resource('/users', 'FormationContinueController');
+
+
+Route::middleware('auth')->group(function(){
+    Route::get('/admin', function(){
+        return view('admin.dashboard');
+    });
+});
